@@ -1,0 +1,92 @@
+.sidebar-main {
+    background-color: #42069E;
+    width: 100px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 150px; */
+    
+}
+
+.sidebar-icons-top{
+    
+    /* height: 500px;  */
+
+
+}
+
+.paperclip-logo {
+    width: 80px;
+    height: 90px;
+}
+
+.logo-underline{
+    border-bottom: white solid 2px;
+    width:90%;
+    margin: auto;
+    margin-bottom: 15px;
+
+}
+
+
+
+.sidebar-button {
+
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+    /* margin: 25px; */
+    color: white;
+
+}
+
+.fa-gauge-high {
+    width: 50px;
+    height: 50px;
+}
+
+.sidebar-button:hover{
+    background-color: #764ABA;
+}
+
+.sidebar-button:active {
+    background-color: #a04aba;
+}
+
+
+.avatar-user-info {
+
+
+    /* position: relative;
+    
+    bottom: 0px; */
+    margin: 10px auto;
+    margin-bottom: 30px;
+    /* align-self: flex-end; */
+
+
+
+
+}
+
+
+
+
+/* .initials{
+
+    width: 70px;
+    height: 70px;
+    border: solid #D9D9D9 2px;
+    border-radius: 100%;
+    margin: 15px;
+    background-color: #D9D9D9;
+    position: relative;
+
+    
+
+    
+} */

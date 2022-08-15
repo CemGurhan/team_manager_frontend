@@ -1,0 +1,38 @@
+h2, h3 {
+    width: 50%;
+    height: 60px;
+    margin: 60px;
+    text-align: left;
+    padding: 0;
+    display: inline;
+  }
+
+  h3{
+    text-align: right;
+  }
+
+
+.user-title{
+    margin: 60px;
+
+}
+
+.user-in-project{
+    /* position: sticky; */
+    overflow-x: scroll;
+    max-height: 200px;
+    /* scroll-behavior: smooth; */
+    overflow-y: scroll;
+  
+
+}
+
+.user-in-project-content{
+    
+}
+
+
+.user-eachline{
+    margin: 30px;
+    text-align: left;
+}

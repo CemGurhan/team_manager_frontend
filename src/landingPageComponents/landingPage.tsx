@@ -1,4 +1,6 @@
 import { useEffect } from "react"
+import DashboardModule from "../DashBoardModule/dashboard";
+import "./landingPage.css"
 
 function LandingPage() {
 
@@ -18,32 +20,18 @@ function LandingPage() {
           });
     }
        
-        
-
-    
-
-
-
-
-
-    
-    
-
-
 
 
     return (
-        
-        <>
-         <p>hewlow</p> 
+         <body>
+          <h1>Dashboard</h1>
+          <DashboardModule />
 
-         <button onClick={createProject}>Click to create</button>
-        
-        </>
-        
-        
+         </body>
     )
    
 }
+
+
 
 export default LandingPage
