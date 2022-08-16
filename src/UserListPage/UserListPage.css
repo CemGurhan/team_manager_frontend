@@ -28,3 +28,7 @@ table{
 tr {
     font-size: 18px;
 }
+
+.currentProject{
+    width: 180px;
+}

@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import "./UserListPage.css"
 import Records from "./Records"
 import Pagination from "./Pagniation"
+import Filter from "./Filter"
 
 function UserList () {
 
@@ -38,6 +39,7 @@ function UserList () {
     return (
         <>
             <h1>Personnel</h1>
+            <Filter />
             <section className="container">
                 <Records data={currentRecords}/>
             </section>

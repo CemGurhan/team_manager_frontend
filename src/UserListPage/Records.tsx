@@ -12,7 +12,7 @@ const Records = ({data}) => {
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Nationality</th>
-                        <th>Current Project</th>
+                        <th className="currentProject">Current Project</th>
                         <th>Project Type</th>
                         <th>Contract Type</th>
                         <th>Source</th>
