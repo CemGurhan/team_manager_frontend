@@ -1,5 +1,5 @@
 .sidebar-main {
-    background-color: #42069E;
+    background-color: #066ca6;
     width: 100px;
     height: 100vh;
     position: fixed;
@@ -9,37 +9,32 @@
     flex-direction: column;
     justify-content: space-between;
     /* gap: 150px; */
+    box-shadow: -11px 0px 13px 20px rgba(0,0,0,0.3);
     
-}
-
-.sidebar-icons-top{
-    
-    /* height: 500px;  */
-
-
 }
 
 .paperclip-logo {
-    width: 80px;
-    height: 90px;
+    width: 60px;
+    height: 75px;
 }
 
 .logo-underline{
-    border-bottom: white solid 2px;
+    border-bottom: rgba(255,255,255,0.5) solid 1px;
     width:90%;
     margin: auto;
     margin-bottom: 15px;
 
 }
 
-
+.sidebar-button-container {
+    height: 100px;
+}
 
 .sidebar-button {
 
     width: 100px;
     height: 100px;
     padding: 25px;
-    /* margin: 25px; */
     color: white;
 
 }
@@ -50,13 +45,16 @@
 }
 
 .sidebar-button:hover{
-    background-color: #764ABA;
+    background-color: #4080a5;
 }
 
-.sidebar-button:active {
-    background-color: #a04aba;
+.sidebar-button-active {
+    background-color: #122f5ac8;
     height: 100px;
+    position: absolute;
+    left: 0;
 }
+
 
 
 .avatar-user-info {
@@ -73,21 +71,3 @@
 
 
 }
-
-
-
-
-/* .initials{
-
-    width: 70px;
-    height: 70px;
-    border: solid #D9D9D9 2px;
-    border-radius: 100%;
-    margin: 15px;
-    background-color: #D9D9D9;
-    position: relative;
-
-    
-
-    
-} */

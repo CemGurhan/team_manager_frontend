@@ -4,7 +4,7 @@ import './App.css'
 import LandingPage from './landingPageComponents/landingPage'
 import SideBar from "./SidebarComponents/sidebar"
 import UserProfilePage from "./UserProfilePage/userprofile"
-// import ProjectProfilePage from "./ProjectProfilePage/projectprofile"
+import ProjectProfilePage from "./ProjectProfilePage/projectprofile"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Projects from './Projects/projects'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -14,19 +14,19 @@ import UserList from './UserListPage/UserListPage'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [sidebarOpen, setSidebarOpen] = useState(false)
 
   return (
     <> 
-        <SideBar/>
+        <SideBar sidebarOpen={sidebarOpen}/>
         <Routes>
           <Route path='/' element={<LandingPage />} />
-          <Route path='/user' element={<UserProfilePage />} />
-         
+          <Route path='/userprofile' element={<UserProfilePage />} />
+          <Route path='/projectprofile' element={<ProjectProfilePage />} />
           <Route path='/users' element={<UserList />} />
           <Route path='/projects' element={<Projects />} />
-          
-          
-            
+
+
         </Routes>
 
     </>
