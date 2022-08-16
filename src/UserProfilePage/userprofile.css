@@ -37,6 +37,11 @@ h4 {
   width: 600px;
 
 }
+.table-header{
+  position: sticky;
+  top: 0; /* Don't forget this, required for the stickiness */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
 
 .user-in-project{
     position: sticky;
@@ -129,4 +134,10 @@ h4 {
 
 .dropdown:hover .dropbtn {
   background-color: #3B9AE1;
+}
+
+.setting-button{
+  margin-left: 20px;
+  height: 60px;
+  width: 60px;
 }

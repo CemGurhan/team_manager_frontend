@@ -1,6 +1,6 @@
 import "./userprofile.css"
 import Table from 'react-bootstrap/Table';
-
+import { NavLink } from "react-router-dom"
 
 const UserProfilePage= () => {
 
@@ -10,7 +10,11 @@ const UserProfilePage= () => {
             <div className="parent">
             <div className="div1">
             <div className="user-title">
-                <h1>Tony Stark</h1>
+                <h1>Tony Stark
+                <NavLink to="/userupdate" >
+                    <img src="https://cdn-icons-png.flaticon.com/512/3039/3039498.png" alt="setting" className="setting-button" />
+                </ NavLink>
+                </h1>
 
             </div>
             <div className="user-details">
@@ -103,7 +107,7 @@ const UserProfilePage= () => {
                 <Table  bordered hover>
                     <thead >
                         <tr>
-                        <th colSpan={4} >Projects</th>
+                        <th colSpan={4} className = "table-header" style={{backgroundColor: "#3B9AE1"}} >Projects</th>
                         {/* <th>First Name</th> */}
                         </tr>
                     </thead>
