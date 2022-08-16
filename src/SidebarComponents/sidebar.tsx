@@ -10,6 +10,8 @@ import { Link, NavLink } from "react-router-dom"
 
 const sideBar = () => {
 
+  let activeClassName = "sidebar-button:active";
+
   return (
     <>
 
@@ -20,9 +22,12 @@ const sideBar = () => {
           <img src={Paperclip_logo_svg} alt="logo" className="paperclip-logo" />
           <div className="logo-underline" />
 
-          <Link to="/">
+          <NavLink to="/" style={({isActive}) => ({background: isActive ? '#a04aba' : 'none'})}
+          className={({ isActive }) =>
+          isActive ? activeClassName : undefined
+        }>
             <FontAwesomeIcon icon={faGaugeHigh} className="sidebar-button"/>
-          </Link>
+          </ NavLink>
           <Link to="/users">
             <img src={UsersButton} alt="users" className="sidebar-button"/>
           </Link>

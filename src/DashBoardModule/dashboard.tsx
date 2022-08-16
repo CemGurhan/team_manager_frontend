@@ -12,15 +12,11 @@ const DashboardModuleContract = () => {
             <div>Fengyi Hu</div>
             <div>Cem </div>
             <div>Ed </div>
-
-
           </div>
           <div className="list">
             <div>Expires in 5 months</div>
-
             <div>Expires in 5 months</div>
             <div>Expires in 5 months</div>
-
           </div>
           <div className="list">
           </div>
@@ -137,12 +133,12 @@ const Graph = () => {
     <section className="ratioblock">
       <section>
         <div className="pie"></div>
-        <p className="ratiopadding">Male/Femail ratio</p>
+        <p className="ratiopadding">Male/Female ratio</p>
       </section>
 
       <section>
         <div className="pie"></div>
-        <p className="ratiopadding">Utilization ratio</p>
+        <p className="ratiopadding">Utilisation ratio</p>
       </section>
 
 
@@ -196,7 +192,7 @@ function DashBoardModule () {
       </section>
       
         <Graph />
-      </section>
+    </section>
   )
 }
 

@@ -5,7 +5,13 @@ const UserProfilePage= () => {
 
     return (
         <>
-
+            
+                
+               
+                <div className="div3"> </div>
+                
+            <div className="parent">
+            <div className="div1"> 
             <div className="user-title">
                 <h1>Tony Stark</h1>
 
@@ -60,11 +66,10 @@ const UserProfilePage= () => {
                     <h3>111111</h3>
                 </div>
 
-  
-
             </div>
-
-            <div className="user-in-project">
+            </div>
+       
+            <div className="user-in-project div3">
                 <Table striped bordered hover>
                     <thead>
                         <tr>
@@ -112,7 +117,7 @@ const UserProfilePage= () => {
                     </tbody>
                 </Table>
             </div>
-
+            </div>
 
         </>
     )
