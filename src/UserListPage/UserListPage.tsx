@@ -77,6 +77,146 @@ const EntryContainer = () => {
             "contractType": "contract",
             "source": "Experis",
             "grading": "b"
+        },
+        {
+            "id": 7,
+            "firstName": "Katya",
+            "lastName": "Grenier",
+            "currentProject": "National Grid",
+            "currentProjectType": "External",
+            "contractType": "contract",
+            "source": "Experis",
+            "grading": "b"
+        },
+        {
+            "id": 8,
+            "firstName": "Katya",
+            "lastName": "Grenier",
+            "currentProject": "National Grid",
+            "currentProjectType": "External",
+            "contractType": "contract",
+            "source": "Experis",
+            "grading": "b"
+        },
+        {
+            "id": 9,
+            "firstName": "Katya",
+            "lastName": "Grenier",
+            "currentProject": "National Grid",
+            "currentProjectType": "External",
+            "contractType": "contract",
+            "source": "Experis",
+            "grading": "b"
+        },
+        {
+            "id": 10,
+            "firstName": "Katya",
+            "lastName": "Grenier",
+            "currentProject": "National Grid",
+            "currentProjectType": "External",
+            "contractType": "contract",
+            "source": "Experis",
+            "grading": "b"
+        },
+        {
+            "id": 11,
+            "firstName": "Katya",
+            "lastName": "Grenier",
+            "currentProject": "National Grid",
+            "currentProjectType": "External",
+            "contractType": "contract",
+            "source": "Experis",
+            "grading": "b"
+        },
+        {
+            "id": 12,
+            "firstName": "Katya",
+            "lastName": "Grenier",
+            "currentProject": "National Grid",
+            "currentProjectType": "External",
+            "contractType": "contract",
+            "source": "Experis",
+            "grading": "b"
+        },
+        {
+            "id": 13,
+            "firstName": "Katya",
+            "lastName": "Grenier",
+            "currentProject": "National Grid",
+            "currentProjectType": "External",
+            "contractType": "contract",
+            "source": "Experis",
+            "grading": "b"
+        },
+        {
+            "id": 14,
+            "firstName": "Katya",
+            "lastName": "Grenier",
+            "currentProject": "National Grid",
+            "currentProjectType": "External",
+            "contractType": "contract",
+            "source": "Experis",
+            "grading": "b"
+        },
+        {
+            "id": 15,
+            "firstName": "Katya",
+            "lastName": "Grenier",
+            "currentProject": "National Grid",
+            "currentProjectType": "External",
+            "contractType": "contract",
+            "source": "Experis",
+            "grading": "b"
+        },
+        {
+            "id": 16,
+            "firstName": "Katya",
+            "lastName": "Grenier",
+            "currentProject": "National Grid",
+            "currentProjectType": "External",
+            "contractType": "contract",
+            "source": "Experis",
+            "grading": "b"
+        },
+        {
+            "id": 17,
+            "firstName": "Katya",
+            "lastName": "Grenier",
+            "currentProject": "National Grid",
+            "currentProjectType": "External",
+            "contractType": "contract",
+            "source": "Experis",
+            "grading": "b"
+        },
+        {
+            "id": 18,
+            "firstName": "Katya",
+            "lastName": "Grenier",
+            "currentProject": "National Grid",
+            "currentProjectType": "External",
+            "contractType": "contract",
+            "source": "Experis",
+            "grading": "b"
+        },
+        {
+            "id": 19,
+            "firstName": "Katya",
+            "lastName": "Grenier",
+            "currentProject": "National Grid",
+            "currentProjectType": "External",
+            "contractType": "contract",
+            "source": "Experis",
+            "grading": "b"
+        },
+        {
+            "id": 20,
+            "firstName": "Katya",
+            "lastName": "Grenier",
+            "currentProject": "National Grid",
+            "currentProjectType": "External",
+            "contractType": "contract",
+            "source": "Experis",
+            "grading": "b"
         }
     ]
 
@@ -112,7 +252,8 @@ const EntryContainer = () => {
                         })}
             </tbody>
         </table>
-
+        
+        <h6>next 20 entries</h6>
     </div>
     )
 }
