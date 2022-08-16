@@ -6,9 +6,7 @@ const UserProfilePage= () => {
 
     return (
         <>
-            
-                
-                
+        
             <div className="parent">
             <div className="div1">
             <div className="user-title">
@@ -43,15 +41,16 @@ const UserProfilePage= () => {
                 <hr></hr>
                 <div className="user-eachline">
                     <h4>Contract Type</h4>
-                    <p>permanent</p>
-                    <div className="dropdown" style={{float:"right"}}>
+                    <p>permanent
+                        <div className="dropdown" style={{float:"right"}}>
                         <button className="dropbtn">🔽</button>
                         <div className="dropdown-content">
                             <a href="#">Link 1</a>
                             <a href="#">Link 2</a>
                             <a href="#">Link 3</a>
                         </div>
-                    </div>
+                    </div></p>
+                    
                     
                     
                 </div>
@@ -59,29 +58,33 @@ const UserProfilePage= () => {
                 <hr></hr>
                 <div className="user-eachline">
                     <h4>Buddies</h4>
-                    <p>Captain America</p>
-                    <div className="dropdown" style={{float:"right"}}>
-                        <button className="dropbtn">🔽</button>
-                        <div className="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                    <p>Captain America
+                        <div className="dropdown" style={{float:"right"}}>
+                            <button className="dropbtn">🔽</button>
+                            <div className="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
                         </div>
-                    </div>
+                    </p>
+                    
                  
                 </div>
                 <hr></hr>
                 <div className="user-eachline">
                     <h4>Source</h4>
-                    <p>superhero</p>
-                    <div className="dropdown" style={{float:"right"}}>
-                        <button className="dropbtn">🔽</button>
-                        <div className="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                    <p>superhero
+                        <div className="dropdown" style={{float:"right"}}>
+                            <button className="dropbtn">🔽</button>
+                            <div className="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
                         </div>
-                    </div>
+                    </p>
+                    
                 
                 </div>
                 <hr></hr>
@@ -98,7 +101,7 @@ const UserProfilePage= () => {
        
             <div className="user-in-project div3">
                 <Table  bordered hover>
-                    <thead>
+                    <thead >
                         <tr>
                         <th colSpan={4} >Projects</th>
                         {/* <th>First Name</th> */}

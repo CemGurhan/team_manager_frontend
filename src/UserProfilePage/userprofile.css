@@ -2,7 +2,7 @@ h4 {
     /* width: 50%;
     height: 60px; */
     margin: 60px;
-    text-align: left;
+    /* text-align: left; */
     padding: 0;
     display: inline;
     /* width: 150px; */
@@ -11,7 +11,7 @@ h4 {
     /* width: 50%;
     height: 60px; */
     margin-left: 60px;
-    text-align: right;
+    /* text-align: right; */
     padding: 0;
     display: inline;
     /* width: 100px; */
@@ -27,24 +27,26 @@ h4 {
 
 .user-details{
   background-color: #FEFBF6;
-  border-style:ridge ;
-  border: 20px;
+  /* border-style:ridge ;
+  border: 20px; */
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 60px;
   margin-left: 30px;
   margin-right: 30px;
+  width: 600px;
 
 }
 
 .user-in-project{
-    /* position: sticky; */
+    position: sticky;
     overflow-x: scroll;
     max-height: 200px;
     /* scroll-behavior: smooth; */
     overflow-y: scroll;
     margin-top: 60px;
     margin-bottom: 60px;
+    
   
 
 }

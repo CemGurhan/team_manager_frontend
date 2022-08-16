@@ -58,6 +58,16 @@ const Projects = () => {
                         <label htmlFor="people" className='filter-label'>Number of People:</label>
                         <input type="number" id="people" name='people' min='0' />
                     </div>
+
+                    <div className='filter-label-and-input'>
+                        <label htmlFor="deadline" className='filter-label'>Deadline:</label>
+                        <input type="date" id='deadline' name='deadline' />
+                    </div> 
+
+                    <div className='filter-label-and-input'>
+                        <label htmlFor="start-date" className='filter-label'>Start Date:</label>
+                        <input type="date" id='start-date' name='start-date' />
+                    </div> 
                     
                 </div> : null}
 
@@ -92,13 +102,13 @@ const Projects = () => {
                     
                     <div className="projects-list-project-card">
 
-                        <div className="status_container">
+                       
                            
                             <div className="projects-list-project-card_status_running"></div>
-                        </div>
+                     
 
 
-                        <div className='projects-list-vertical-seperator'></div>
+                        
 
                         
 
@@ -120,12 +130,12 @@ const Projects = () => {
 
                     <div className="projects-list-project-card">
 
-                    <div className="status_container">
+                    
                             
                             <div className="projects-list-project-card_status_complete"></div>
-                        </div>
+                    
 
-                     <div className='projects-list-vertical-seperator'></div>
+                     
 
                         
 
@@ -144,12 +154,12 @@ const Projects = () => {
                     <div className="projects-list-project-card">
 
                         
-                    <div className="status_container">
+                
                             
                             <div className="projects-list-project-card_status_running"></div>
-                        </div>
+                       
 
-                         <div className='projects-list-vertical-seperator'></div>
+                        
 
                         
 
@@ -168,12 +178,12 @@ const Projects = () => {
                      <div className="projects-list-project-card">
 
                         
-                     <div className="status_container">
+                    
                             
                             <div className="projects-list-project-card_status_upcoming"></div>
-                        </div>
+                    
 
-                        <div className='projects-list-vertical-seperator'></div>
+                        
 
                         
 
@@ -191,13 +201,36 @@ const Projects = () => {
 
                      <div className="projects-list-project-card">
 
-                        
-                     <div className="status_container">
+              
                             
                             <div className="projects-list-project-card_status_upcoming"></div>
-                        </div>
+                  
 
-                         <div className='projects-list-vertical-seperator'></div>
+                     
+
+                        
+
+                        <p className="projects-list-project-card_project_name">Project Name: A New, even coooooler, project</p>
+
+                        <div className='projects-list-vertical-seperator'></div>
+
+                        <p className="projects-list-project-card_project_people">Number of People: 800</p>
+
+                        <div className='projects-list-vertical-seperator'></div>
+
+                        <button className="projects-list-learn-more-button">Learn More/Edit</button>
+
+                    </div>
+
+
+                    <div className="projects-list-project-card">
+
+              
+                            
+                            <div className="projects-list-project-card_status_upcoming"></div>
+                  
+
+                     
 
                         
 
