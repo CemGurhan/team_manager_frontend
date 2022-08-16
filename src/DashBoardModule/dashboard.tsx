@@ -133,12 +133,12 @@ const Graph = () => {
     <section className="ratioblock">
       <section>
         <div className="pie"></div>
-        <p className="ratiopadding">Male/Female ratio</p>
+        <p className="ratiopadding">Male/Female ratio: 60%</p>
       </section>
 
       <section>
         <div className="pie"></div>
-        <p className="ratiopadding">Utilisation ratio</p>
+        <p className="ratiopadding">Utilisation ratio: 80%</p>
       </section>
 
 

@@ -9,6 +9,7 @@
     flex-direction: row;
     align-items: flex-start;
     background-color: white;
+    padding: 20px;
 }
 
 .entrycontainer {
@@ -27,4 +28,14 @@
     gap: 50px;
     padding: 20px;
     align-items: baseline;
+}
+
+table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: large;
+}
+.padding {
+    height: 30px;
 }
