@@ -1,5 +1,21 @@
 import "./dashboard.css"
 
+function DashBoardModule () {
+  return (
+    <section className="dashboard">
+      <section className="modules">
+        <DashboardModuleContract />
+        <DashboardModuleOngoingProject />
+        <DashboardModuleUpcomingProject />
+        <DashboardModuleBench />
+        <DashboardModuleOtherStuff />        
+        <DashboardModuleOtherStuff />
+      </section>
+        <Graph />
+    </section>
+  )
+}
+
 
 const DashboardModuleContract = () => {
 
@@ -133,68 +149,46 @@ const Graph = () => {
     <section className="ratioblock">
       <section>
         <div className="pie"></div>
-        <p className="ratiopadding">Male/Female ratio: 60%</p>
+        <h5 className="ratiotitle">Male/Female ratio: 60%</h5>
       </section>
 
       <section>
         <div className="pie"></div>
-        <p className="ratiopadding">Utilisation ratio: 80%</p>
+        <h5 className="ratiotitle">Utilisation ratio: 80%</h5>
       </section>
 
+      <section>
+        <section className="barchart">
+        <p>HTML</p>
+          <div className="chartcontainer">
+            <div className="skills html">90%</div>
+          </div>
 
-      <section className="barchart">
-        <div className="bar">
-      <div>HTML</div>
-      <div className="container">
-        <div className="skills html">90%</div>
-      </div>
-      </div>
+          <p>CSS</p>
+          <div className="chartcontainer">
+            <div className="skills css">80%</div>
+          </div>
 
-      <div className="bar">
-      <div>CSS</div>
-      <div className="container">
-        <div className="skills css">80%</div>
-      </div>  
-      </div>
+          <p>JavaScript</p>
+          <div className="chartcontainer">
+            <div className="skills js">65%</div>
+          </div>
 
-      <div className="bar">
-      <div>JavaScript</div>
-      <div className="container">
-        <div className="skills js">65%</div>
-      </div>
-      </div>
-
-      <div className="bar">
-      <div>PHP</div>
-      <div className="container">
-        <div className="skills php">60%</div>
-      </div>
-      </div>
-      <p className="ratiopadding">Bar chart</p>
-
+          <p>PHP</p>
+          <div className="chartcontainer">
+            <div className="skills php">60%</div>
+          </div>
+        </section>
+        <h5 className="ratiotitle">Skills Bar chart</h5>
       </section>
+
       
       <button className="button">View More</button>
       </section>
   )
 }
 
-function DashBoardModule () {
-  return (
-    <section className="dashboard">
-      <section className="modules">
-        <DashboardModuleContract />
-        <DashboardModuleOngoingProject />
-        <DashboardModuleUpcomingProject />
-        <DashboardModuleBench />
-        <DashboardModuleOtherStuff />        
-        <DashboardModuleOtherStuff />
-      </section>
-      
-        <Graph />
-    </section>
-  )
-}
+
 
 
 

@@ -1,3 +1,9 @@
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+}
+
 .modules {
     display: flex;
     flex-direction: row;
@@ -7,6 +13,9 @@
     gap: 40px 60px;
 }
 
+
+
+/* dashboard module */
 .block {
     display: flex;
     flex-direction: column;
@@ -15,11 +24,10 @@
     justify-content: space-evenly;
     width: 330px;
     height: 280px;
-    background-color: #B2B6FF;
+    background-color: #D4EAEF;
     padding: 20px;
     box-shadow: 5px 10px;
     align-items: center;
-
 }
 
 .title {
@@ -39,61 +47,64 @@
     justify-content: space-evenly;
 }
 
-.dashboard {
-    display: flex;
-    flex-direction: row;
-    gap: 0px;
-}
 
+
+
+/* graph section */
 .ratioblock{
     display: flex;
     flex-direction: column;
-    align-content: center;
     border-radius: 30px;
-    justify-content: space-evenly;
-    border: 5px purple;
     width: 800px;
-    background-color: #B2B6FF;
+    background-color: #D4EAEF;
     padding: 20px;
     box-shadow: 5px 10px;
-    justify-content: center;
-    align-items: center;
+    padding-top: 30px;
+    gap: 30px;
 }
 
-.ratiopadding {
-    padding: 10px;
+.ratiotitle{
+    height: 40px;
+    padding-top: 10px;
+    text-align: center;
 }
 
 .pie {
+    margin-left: auto;
+    margin-right: auto;
     width: 150px; height: 150px;
     border-radius: 50%;
-    background: green;
+    background: lightseagreen;
     background-image:
     linear-gradient(to right, transparent 50%, pink 0);
   }
   
+/* bar chart section */
 .barchart{
-    width: 250px;
+    width: 240px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 /* Make sure that padding behaves as expected */
 * {box-sizing:border-box}
 
 /* Container for skill bars */
-.container {
-  width: 100%; /* Full width */
-  background-color: #ddd; /* Grey background */
+.chartcontainer {
+  width: 100%; 
 }
 
 .skills {
-  text-align: right; /* Right-align text */
-  padding-top: 10px; /* Add top padding */
-  padding-bottom: 10px; /* Add bottom padding */
-  color: white; /* White text color */
+  text-align: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
 }
 
-.html {width: 90%; background-color: #04AA6D;} /* Green */
-.css {width: 80%; background-color: #2196F3;} /* Blue */
-.js {width: 65%; background-color: #f44336;} /* Red */
-.php {width: 60%; background-color: #808080;} /* Dark Grey */
+.html {width: 90%; background-color: #04AA6D;} 
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 65%; background-color: #f44336;}
+.php {width: 60%; background-color: #808080;}
 
 
