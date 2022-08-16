@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom"
+import "./UserListPage.css"
+
 
 const Records = ({data}) => {
     return (
