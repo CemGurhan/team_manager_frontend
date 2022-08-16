@@ -14,11 +14,11 @@ import UserList from './UserListPage/UserListPage'
 
 function App() {
   const [count, setCount] = useState(0)
-  const [sidebarOpen, setSidebarOpen] = useState(false)
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
   return (
     <> 
-        <SideBar sidebarOpen={sidebarOpen}/>
+        <SideBar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen}/>
         <Routes>
           <Route path='/' element={<LandingPage />} />
           <Route path='/userprofile' element={<UserProfilePage />} />

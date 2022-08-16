@@ -1,6 +1,11 @@
+:root {
+    --sidebar-width: 70px;
+    --sidebar-button-padding: 15px;
+}
+
 .sidebar-main {
     background-color: #066ca6;
-    width: 100px;
+    width: var(--sidebar-width);
     height: 100vh;
     position: fixed;
     top: 0;
@@ -8,14 +13,34 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* gap: 150px; */
     box-shadow: -11px 0px 13px 20px rgba(0,0,0,0.3);
-    
+}
+
+.toggle-sidebar-button {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 1.5rem;
+    right: -0.75rem;
+    z-index: 99;
+    color: rgba(18,60,106,255);
+    background-color: white;
+    cursor: pointer;
+    transform: rotatez(0deg);
+    transition: transform 200ms ease-in-out;
+    box-shadow: 0px 0px 10px grey;
+    border-radius: 50%;
+}
+.paperclip-logo-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
 }
 
 .paperclip-logo {
-    width: 60px;
-    height: 75px;
+    width: 35px;
+    height: var(--sidebar-width);
 }
 
 .logo-underline{
@@ -27,21 +52,23 @@
 }
 
 .sidebar-button-container {
-    height: 100px;
+    height:  var(--sidebar-width);
 }
 
 .sidebar-button {
 
-    width: 100px;
-    height: 100px;
-    padding: 25px;
+    width:  var(--sidebar-width);
+    height:  var(--sidebar-width);
+    padding: var(--sidebar-button-padding);
     color: white;
 
 }
 
 .fa-gauge-high {
-    width: 50px;
-    height: 50px;
+    /* width: calc( var(--sidebar-width)/2);
+    height: calc( var(--sidebar-width)/2); */
+    width:calc(var(--sidebar-width) - 2* var(--sidebar-button-padding));
+    height:calc(var(--sidebar-width) - 2* var(--sidebar-button-padding));
 }
 
 .sidebar-button:hover{
@@ -49,8 +76,9 @@
 }
 
 .sidebar-button-active {
-    background-color: #122f5ac8;
-    height: 100px;
+    background-color: rgba(18, 47, 90, 0.784);
+    /* background-color:rgba(18,60,106,255); */
+    height: var(--sidebar-width);
     position: absolute;
     left: 0;
 }
@@ -63,8 +91,9 @@
     /* position: relative;
     
     bottom: 0px; */
+    
     margin: 10px auto;
-    margin-bottom: 30px;
+    margin-bottom: calc(var(--sidebar-width)/2);
     /* align-self: flex-end; */
 
 
