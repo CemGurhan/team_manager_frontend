@@ -16,7 +16,7 @@ const Records = ({data}) => {
                         <th>Project Type</th>
                         <th>Contract Type</th>
                         <th>Source</th>
-                        <th></th>
+                        <th>Profile</th>
                     </tr>
                 </thead>
                 <tbody>

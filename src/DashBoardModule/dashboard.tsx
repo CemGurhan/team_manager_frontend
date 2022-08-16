@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "./dashboard.css"
 
 function DashBoardModule () {
@@ -37,7 +38,7 @@ const DashboardModuleContract = () => {
           <div className="list">
           </div>
         </section>
-        <button className="button">View More</button>
+        <Link to={"/users"}>View More</Link>
     </section>
   )
 }
@@ -65,7 +66,7 @@ const DashboardModuleOngoingProject = () => {
             <div>6 people</div>
           </div>
         </section>
-        <button className="button">View More</button>
+        <Link to={"/projects"}>View More</Link>
     </section>
   )
 }
@@ -93,7 +94,7 @@ const DashboardModuleUpcomingProject = () => {
             <div>6 people</div>
           </div>
         </section>
-        <button className="button">View More</button>
+        <Link to={"/projects"}>View More</Link>
     </section>
   )
 }
@@ -116,7 +117,7 @@ const DashboardModuleBench = () => {
             <div>1 week</div>
           </div>
         </section>
-        <button className="button">View More</button>
+        <Link to={"/users"}>View More</Link>
     </section>
   )
 }
