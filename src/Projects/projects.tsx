@@ -11,7 +11,7 @@ const Projects = () => {
 
     const [showFilters, setShowFilters] = useState(false)
     const toggleShowFilters = () => {setShowFilters(!showFilters)}
-    const [loadingBar, setLoadingBar] = useState('0px')
+    const [loadingBar, setLoadingBar] = useState(0)
 
     const techStackList = [
         {value: "go", label: "Go"},
@@ -49,19 +49,10 @@ const Projects = () => {
     // LEAP YEARS!!!!
     function daysCalculator_betweenDates(projectStartDate: string, projectEndDate: string )  {
 
-        const current = new Date()
-
-        const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`
-
         const projectStartDate_Array = projectStartDate.split("/")        
 
         const projectEndDate_Array = projectEndDate.split("/")
 
-        // let days_left = months_days.data[current.getMonth()+1] - current.getDate();
-
-        // let current_day = current.getDate();
-        // let current_month = current.getMonth() + 1;
-        // let current_year = current.getFullYear();
 
         let days_left = months_days.data[parseInt(projectStartDate_Array[1],10)] - parseInt(projectStartDate_Array[0],10)
 
@@ -123,10 +114,12 @@ const Projects = () => {
         let percentage = (daysCalculator_betweenDates(start_date,current_date)/daysCalculator_betweenDates(start_date,end_date))
 
         let loadingBar_Level = percentage * 100
+        
+        // setLoadingBar(loadingBar_Level)
 
-        setLoadingBar(`${loadingBar_Level}`)
+        return 20
 
-
+        
 
 
     }
@@ -168,6 +161,7 @@ const Projects = () => {
 
                 
                 {/* PUT IN DATES */}
+               
               
                
 
@@ -213,6 +207,9 @@ const Projects = () => {
                     
                 </div> : null}
 
+
+               
+
                 <div className="status-key-container">
 
                     {/* <div className="status-key-container-title-text-container">
@@ -235,9 +232,13 @@ const Projects = () => {
                      <div className='status-key-container-seperator'></div>
 
 
-
-
                 </div>
+
+                <>
+                {()=>runningProject_loadingBar()}
+                </>
+
+               
 
                 <div className="projects-list">
                
@@ -247,7 +248,7 @@ const Projects = () => {
 
                        
                            
-                            <div className="projects-list-project-card_status_running" style={{borderBottom : `rgb(13, 147, 13) ${loadingBar} solid` }}></div>
+                            <div className="projects-list-project-card_status_running" style={{borderBottom : `rgb(13, 147, 13) ${loadingBar}px solid` }}></div>
                      
 
 
