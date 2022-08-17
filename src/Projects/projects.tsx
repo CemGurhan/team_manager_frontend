@@ -2,7 +2,7 @@ import Select from 'react-select'
 import './projects.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons"
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 
@@ -101,33 +101,29 @@ const Projects = () => {
 
     }
 
-
-    const runningProject_loadingBar = () => {
-
-        const current = new Date()
-
-        const start_date = "11/03/2022"
-        const end_date = "06/12/2022"
-
-        let current_date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`
-
-        let percentage = (daysCalculator_betweenDates(start_date,current_date)/daysCalculator_betweenDates(start_date,end_date))
-
-        let loadingBar_Level = percentage * 100
-
-        if (loadingBar == 0){
-
-            setLoadingBar(loadingBar_Level)
-        }
-        
-        
-
-        return loadingBar_Level
-
-        
+    useEffect(() => {
 
 
-    }
+            const current = new Date()
+    
+            const start_date = "11/03/2022"
+            const end_date = "31/8/2022"
+    
+            let current_date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`
+    
+            let percentage = (daysCalculator_betweenDates(start_date,current_date)/daysCalculator_betweenDates(start_date,end_date))
+    
+            let loadingBar_Level = percentage * 100
+    
+
+    
+                setLoadingBar(loadingBar_Level)
+            
+
+    },[])
+
+
+   
     
 
 
@@ -240,7 +236,7 @@ const Projects = () => {
                 </div>
 
                 <>
-                {runningProject_loadingBar()}
+                {/* {runningProject_loadingBar()} */}
                 </>
 
                

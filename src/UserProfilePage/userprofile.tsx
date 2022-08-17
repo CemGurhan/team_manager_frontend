@@ -4,14 +4,16 @@ import { NavLink } from "react-router-dom"
 
 const UserProfilePage= () => {
 
-    interface User {
-        firstName: string;
-        lastName: number;
-        gender: string;
-        color: string;
-        activityLevel?: string; // optional, same as string | undefined
-        favoriteFood?: string; // optional, same as string | undefined
-      }
+    // interface User {
+    //     firstName: string;
+    //     // lastName: ;
+    //     preferName: string;
+    //     country: string;
+    //     gender: string;
+    //     contractType: string;
+    //     buddy?: string; // optional, same as string | undefined
+    //     DASID?: string; // optional, same as string | undefined
+    //   }
 
 
 
