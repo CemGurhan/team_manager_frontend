@@ -149,13 +149,13 @@ const Graph = () => {
   return (
     <section className="ratioblock">
       <section>
-        <div className="pie"></div>
-        <h5 className="ratiotitle">Male/Female ratio: 60%</h5>
+        <div className="MFRatio"></div>
+        <h5 className="ratiotitle">Utilisation ratio: 80%</h5>
       </section>
 
       <section>
         <div className="pie"></div>
-        <h5 className="ratiotitle">Utilisation ratio: 80%</h5>
+        <h5 className="ratiotitle">Male/Female ratio: 60%</h5>
       </section>
 
       <section>

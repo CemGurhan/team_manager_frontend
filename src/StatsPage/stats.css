@@ -1,0 +1,30 @@
+.topmodulecontainer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.numberModulesContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px 30px;
+    margin-top: 30px;
+}
+
+.numberModuleContainer{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 140px;
+    background-color: lightsteelblue;
+    justify-content: center;
+    box-shadow: 3px 3px lightgrey;
+}
+
+.bignumberModuleContainer{
+    width: 300px;
+    height: 270px;
+    background-color: lightsteelblue;
+    box-shadow: 3px 3px lightgrey;
+}
