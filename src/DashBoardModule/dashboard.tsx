@@ -154,7 +154,7 @@ const Graph = () => {
       </section>
 
       <section>
-        <div className="pie"></div>
+        <div className="Utilisation"></div>
         <h5 className="ratiotitle">Male/Female ratio: 60%</h5>
       </section>
 
