@@ -1,0 +1,66 @@
+.topContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.topColumn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.numberModuleContainer{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 140px;
+    background-color: lightsteelblue;
+    justify-content: center;
+    box-shadow: 3px 3px lightgrey;
+}
+
+.blockModuleContainer{
+    width: 300px;
+    height: 290px;
+    background-color: lightsteelblue;
+    box-shadow: 3px 3px lightgrey;
+}
+
+.bigRatio {
+    width: 180px;
+    height: 180px;
+    background-image: conic-gradient(pink 40%, lightseagreen 17%, lightseagreen);
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 6px;
+}
+
+.padding {
+    height: 10px;
+}
+
+.bottomContainer{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.bigStatModule{
+    width: 710px;
+    height: 200px;
+    background-color: lightsteelblue;
+    box-shadow: 3px 3px lightgrey;
+}
+
+.smallStatModule{
+    width: 510px;
+    height: 200px;
+    background-color: lightsteelblue;
+    box-shadow: 3px 3px lightgrey;
+}
