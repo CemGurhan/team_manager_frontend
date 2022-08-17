@@ -38,7 +38,7 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen }: ISideBar) => {
               className="sidebar-text"
               style={{ display: isSidebarOpen ? "none" : "" }}
             >
-              PaPercliP{" "}
+              PaPercliP
             </p>
           </div>
           <div className="logo-underline" />
@@ -83,7 +83,7 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen }: ISideBar) => {
             <NavLink
               to="/stats"
               className={({ isActive }) =>
-                isActive ? "sidebar-button-active" : undefined
+                isActive ? "sidebar-button-link-active sidebar-button-link" : "sidebar-button-link"
               }
             >
               <img src={StatsButton} alt="stats" className="sidebar-button" />

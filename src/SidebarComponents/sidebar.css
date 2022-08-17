@@ -5,7 +5,7 @@
 
 .sidebar-main {
     background-color: #066ca6;
-    width: var(--sidebar-width);
+    /* width: var(--sidebar-width); */
     height: 100vh;
     position: fixed;
     top: 0;
@@ -14,6 +14,12 @@
     flex-direction: column;
     justify-content: space-between;
     box-shadow: -11px 0px 13px 20px rgba(0,0,0,0.3);
+}
+
+.sidebar-icons-top {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
 }
 
 .toggle-sidebar-button {
@@ -36,67 +42,72 @@
     flex-direction: row;
     gap: 1rem;
     align-items: center;
+
+}
+
+.sidebar-icons-top p {
+    margin: 0px;
 }
 
 .paperclip-logo {
-    width: 35px;
+    width: var(--sidebar-width);
     height: var(--sidebar-width);
+    padding: 15px
 }
 
 .logo-underline{
     border-bottom: rgba(255,255,255,0.5) solid 1px;
-    width:90%;
+    width: calc(100% - 10px);
     margin: auto;
+    align-self: center;
     margin-bottom: 15px;
 
 }
 
 .sidebar-button-container {
     height:  var(--sidebar-width);
+    width: 100%;
+    left:0;
+}
+
+.sidebar-button-link {
+    
+}
+
+.sidebar-button-link-active {
+    background-color: rgba(18, 47, 90, 0.784);
+    /* background-color:rgba(18,60,106,255); */
+    height: var(--sidebar-width);
+    position: absolute;
+    left: 0;
+    z-index: 51;
 }
 
 .sidebar-button {
-
     width:  var(--sidebar-width);
     height:  var(--sidebar-width);
     padding: var(--sidebar-button-padding);
     color: white;
+    /* position: absolute; */
+    left: 0;
+    z-index: 50;
 
-}
-
-.fa-gauge-high {
-    /* width: calc( var(--sidebar-width)/2);
-    height: calc( var(--sidebar-width)/2); */
-    width:calc(var(--sidebar-width) - 2* var(--sidebar-button-padding));
-    height:calc(var(--sidebar-width) - 2* var(--sidebar-button-padding));
 }
 
 .sidebar-button:hover{
     background-color: #4080a5;
 }
 
-.sidebar-button-active {
-    background-color: rgba(18, 47, 90, 0.784);
-    /* background-color:rgba(18,60,106,255); */
-    height: var(--sidebar-width);
-    position: absolute;
-    left: 0;
+.fa-gauge-high {
+    width:calc(var(--sidebar-width) - 2* var(--sidebar-button-padding));
+    height:calc(var(--sidebar-width) - 2* var(--sidebar-button-padding));
 }
 
 
 
+
+
 .avatar-user-info {
-
-
-    /* position: relative;
-    
-    bottom: 0px; */
-    
     margin: 10px auto;
     margin-bottom: calc(var(--sidebar-width)/2);
-    /* align-self: flex-end; */
-
-
-
-
 }
