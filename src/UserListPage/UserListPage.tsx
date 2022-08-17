@@ -43,6 +43,7 @@ function UserList () {
             <section className="container">
                 <Records data={currentRecords}/>
             </section>
+            <section className="pagecontainer">
             <Pagination 
                 nPages = { nPages } 
                 currentPage = { currentPage } 
@@ -53,6 +54,8 @@ function UserList () {
                 type="text" 
                 />
             </label>
+            </section>
+            <button>Import a table</button>
         </>
     )
 

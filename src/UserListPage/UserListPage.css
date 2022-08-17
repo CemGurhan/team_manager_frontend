@@ -32,3 +32,9 @@ tr {
 .currentProject{
     width: 180px;
 }
+
+.pagecontainer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
