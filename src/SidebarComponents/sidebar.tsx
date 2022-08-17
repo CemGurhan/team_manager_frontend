@@ -40,7 +40,7 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen }: ISideBar) => {
             />
             <p
               className="sidebar-text"
-              style={{ display: isSidebarOpen ? "none" : "" }}
+              style={{ display: isSidebarOpen ? "" : "none" }}
             >
               P a p e r c l i p
             </p>
@@ -58,8 +58,8 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen }: ISideBar) => {
               <FontAwesomeIcon icon={faGaugeHigh} className="sidebar-button" />
               <p
                 className="sidebar-text"
-                style={{ display: isSidebarOpen ? "none" : "" }}
-              >
+                style={{ display: isSidebarOpen ? "" : "none" }}
+                >
                 Dashboard
               </p>{" "}
             </NavLink>
@@ -76,8 +76,8 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen }: ISideBar) => {
               <img src={UsersButton} alt="users" className="sidebar-button" />
               <p
                 className="sidebar-text"
-                style={{ display: isSidebarOpen ? "none" : "" }}
-              >
+                style={{ display: isSidebarOpen ? "" : "none" }}
+                >
                 People
               </p>{" "}
             </NavLink>
@@ -98,8 +98,8 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen }: ISideBar) => {
               />
               <p
                 className="sidebar-text"
-                style={{ display: isSidebarOpen ? "none" : "" }}
-              >
+                style={{ display: isSidebarOpen ? "" : "none" }}
+                >
                 Projects
               </p>{" "}
             </NavLink>
@@ -116,8 +116,8 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen }: ISideBar) => {
               <img src={StatsButton} alt="stats" className="sidebar-button" />
               <p
                 className="sidebar-text"
-                style={{ display: isSidebarOpen ? "none" : "" }}
-              >
+                style={{ display: isSidebarOpen ? "" : "none" }}
+                >
                 Stats
               </p>{" "}
             </NavLink>
@@ -133,8 +133,8 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen }: ISideBar) => {
           />
           <p
             className="sidebar-text"
-            style={{ display: isSidebarOpen ? "none" : "" }}
-          >
+            style={{ display: isSidebarOpen ? "" : "none" }}
+            >
             Inderjeet Ubha
           </p>
         </div>
