@@ -107,17 +107,22 @@ const Projects = () => {
         const current = new Date()
 
         const start_date = "11/03/2022"
-        const end_date = "06/06/2023"
+        const end_date = "06/12/2022"
 
         let current_date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`
 
         let percentage = (daysCalculator_betweenDates(start_date,current_date)/daysCalculator_betweenDates(start_date,end_date))
 
         let loadingBar_Level = percentage * 100
-        
-        // setLoadingBar(loadingBar_Level)
 
-        return 20
+        if (loadingBar == 0){
+
+            setLoadingBar(loadingBar_Level)
+        }
+        
+        
+
+        return loadingBar_Level
 
         
 
@@ -172,7 +177,7 @@ const Projects = () => {
                         <label htmlFor="project-status" className='filter-label'>Project Status:</label>
                         <select name="project-status" id="project-status">
                             <option value="any">Any</option>
-                            <option value="ongoing">Ongoing</option>
+                            <option value="ongoing">On-going</option>
                             <option value="completed">Completed</option>
                             <option value="Upcoming">Upcoming</option>
                         </select>
@@ -235,7 +240,7 @@ const Projects = () => {
                 </div>
 
                 <>
-                {()=>runningProject_loadingBar()}
+                {runningProject_loadingBar()}
                 </>
 
                

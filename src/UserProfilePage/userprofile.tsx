@@ -4,7 +4,18 @@ import { NavLink } from "react-router-dom"
 
 const UserProfilePage= () => {
 
-    
+    interface User {
+        firstName: string;
+        lastName: number;
+        gender: string;
+        color: string;
+        activityLevel?: string; // optional, same as string | undefined
+        favoriteFood?: string; // optional, same as string | undefined
+      }
+
+
+
+
 
     return (
         <>
@@ -42,6 +53,12 @@ const UserProfilePage= () => {
                     <h4>Country</h4>
                     <p>USA</p>
                    
+                </div>
+                
+                <hr></hr>
+                <div className="user-eachline">
+                    <h4>Gender</h4>
+                    <p>M</p>   
                 </div>
                 
                 <hr></hr>
