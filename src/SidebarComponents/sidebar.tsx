@@ -23,7 +23,11 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen }: ISideBar) => {
         <div className="sidebar-icons-top">
           <FontAwesomeIcon
             icon={faCircleChevronRight}
-            className="toggle-sidebar-button"
+            className={
+              isSidebarOpen
+                ? "toggle-sidebar-button toggle-sidebar-button-open"
+                : "toggle-sidebar-button"
+            }
             onClick={() => {
               setIsSidebarOpen(!isSidebarOpen);
             }}
@@ -38,7 +42,7 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen }: ISideBar) => {
               className="sidebar-text"
               style={{ display: isSidebarOpen ? "none" : "" }}
             >
-              PaPercliP
+              P a p e r c l i p
             </p>
           </div>
           <div className="logo-underline" />
@@ -46,29 +50,45 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen }: ISideBar) => {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                isActive ? "sidebar-button-active" : undefined
+                isActive
+                  ? "sidebar-button-link sidebar-button-link-active"
+                  : "sidebar-button-link"
               }
             >
               <FontAwesomeIcon icon={faGaugeHigh} className="sidebar-button" />
-              {/* <p className="sidebar-text">Dashboard</p> */}
+              <p
+                className="sidebar-text"
+                style={{ display: isSidebarOpen ? "none" : "" }}
+              >
+                Dashboard
+              </p>{" "}
             </NavLink>
           </div>
           <div className="sidebar-button-container">
             <NavLink
               to="/users"
               className={({ isActive }) =>
-                isActive ? "sidebar-button-active" : undefined
+                isActive
+                  ? "sidebar-button-link-active sidebar-button-link"
+                  : "sidebar-button-link"
               }
             >
               <img src={UsersButton} alt="users" className="sidebar-button" />
-              {/* <p className="sidebar-text">People</p> */}
+              <p
+                className="sidebar-text"
+                style={{ display: isSidebarOpen ? "none" : "" }}
+              >
+                People
+              </p>{" "}
             </NavLink>
           </div>
           <div className="sidebar-button-container">
             <NavLink
               to="/projects"
               className={({ isActive }) =>
-                isActive ? "sidebar-button-active" : undefined
+                isActive
+                  ? "sidebar-button-link-active sidebar-button-link"
+                  : "sidebar-button-link"
               }
             >
               <img
@@ -76,28 +96,48 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen }: ISideBar) => {
                 alt="projects"
                 className="sidebar-button"
               />
-              {/* <p className="sidebar-text">Projects</p> */}
+              <p
+                className="sidebar-text"
+                style={{ display: isSidebarOpen ? "none" : "" }}
+              >
+                Projects
+              </p>{" "}
             </NavLink>
           </div>
           <div className="sidebar-button-container">
             <NavLink
               to="/stats"
               className={({ isActive }) =>
-                isActive ? "sidebar-button-link-active sidebar-button-link" : "sidebar-button-link"
+                isActive
+                  ? "sidebar-button-link-active sidebar-button-link"
+                  : "sidebar-button-link"
               }
             >
               <img src={StatsButton} alt="stats" className="sidebar-button" />
-              {/* <p className="sidebar-text">Stats</p> */}
+              <p
+                className="sidebar-text"
+                style={{ display: isSidebarOpen ? "none" : "" }}
+              >
+                Stats
+              </p>{" "}
             </NavLink>
           </div>
         </div>
-        <Avatar
-          name="Inderjeet Ubha"
-          color={"#03436e"}
-          size="50"
-          round={true}
-          className="avatar-user-info"
-        />
+        <div className="sidebar-avatar">
+          <Avatar
+            name="Inderjeet Ubha"
+            color={"#03436e"}
+            size="50"
+            round={true}
+            className="avatar-user-info"
+          />
+          <p
+            className="sidebar-text"
+            style={{ display: isSidebarOpen ? "none" : "" }}
+          >
+            Inderjeet Ubha
+          </p>
+        </div>
       </main>
       <div className="sidebar-expand"></div>
     </>
