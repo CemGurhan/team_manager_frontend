@@ -39,13 +39,6 @@ const Pagination = ({ nPages, currentPage, setCurrentPage }) => {
                         Next
                     </a>
                 </li>
-                {/* <label>Enter your name:
-                    <input
-                    type="text" 
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    />
-                </label> */}
             </ul>
         </nav>
     )

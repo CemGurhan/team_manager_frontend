@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import "./UserListPage.css"
 import Records from "./Records"
 import Pagination from "./Pagniation"
-import Filter from "./Filter"
+import { Filter } from "./Filter"
 
 function UserList () {
 
@@ -48,6 +48,11 @@ function UserList () {
                 currentPage = { currentPage } 
                 setCurrentPage = { setCurrentPage }
             />
+            <label>No on a page: 
+                <input
+                type="text" 
+                />
+            </label>
         </>
     )
 
