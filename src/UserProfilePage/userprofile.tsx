@@ -1,8 +1,23 @@
 import "./userprofile.css"
 import Table from 'react-bootstrap/Table';
-
+import { NavLink } from "react-router-dom"
 
 const UserProfilePage= () => {
+
+    // interface User {
+    //     firstName: string;
+    //     // lastName: ;
+    //     preferName: string;
+    //     country: string;
+    //     gender: string;
+    //     contractType: string;
+    //     buddy?: string; // optional, same as string | undefined
+    //     DASID?: string; // optional, same as string | undefined
+    //   }
+
+
+
+
 
     return (
         <>
@@ -10,7 +25,11 @@ const UserProfilePage= () => {
             <div className="parent">
             <div className="div1">
             <div className="user-title">
-                <h1>Tony Stark</h1>
+                <h1>Tony Stark
+                <NavLink to="/userupdate" >
+                    <img src="https://cdn-icons-png.flaticon.com/512/3039/3039498.png" alt="setting" className="setting-button" />
+                </ NavLink>
+                </h1>
 
             </div>
             <div className="user-details">
@@ -36,6 +55,12 @@ const UserProfilePage= () => {
                     <h4>Country</h4>
                     <p>USA</p>
                    
+                </div>
+                
+                <hr></hr>
+                <div className="user-eachline">
+                    <h4>Gender</h4>
+                    <p>M</p>   
                 </div>
                 
                 <hr></hr>
@@ -103,7 +128,7 @@ const UserProfilePage= () => {
                 <Table  bordered hover>
                     <thead >
                         <tr>
-                        <th colSpan={4} >Projects</th>
+                        <th colSpan={4} className = "table-header" style={{backgroundColor: "#3B9AE1"}} >Projects</th>
                         {/* <th>First Name</th> */}
                         </tr>
                     </thead>

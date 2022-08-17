@@ -9,7 +9,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Projects from './Projects/projects'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import UserList from './UserListPage/UserListPage'
-
+import ProjectProfileSetting from './ProjectProfileSettingPage/ProjectProfileSetting'
+import UserProfileSetting from './UserProfileSettingPage/UserProfileSetting'
+import Stats from './StatsPage/stats'
 
 
 function App() {
@@ -23,8 +25,13 @@ function App() {
           <Route path='/' element={<LandingPage />} />
           <Route path='/userprofile' element={<UserProfilePage />} />
           <Route path='/projectprofile' element={<ProjectProfilePage />} />
+          <Route path='/userprofile/setting' element={<UserProfileSetting />} />
+          <Route path='/projectprofile/setting' element={<ProjectProfileSetting />} />
           <Route path='/users' element={<UserList />} />
           <Route path='/projects' element={<Projects />} />
+          <Route path='/stats' element={<Stats />} />
+
+
 
 
         </Routes>

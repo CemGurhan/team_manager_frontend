@@ -4,6 +4,7 @@
     background-color: violet;
 }
 
+/* table */
 .container{
     display: flex;
     flex-direction: row;
@@ -19,20 +20,15 @@
 
 }
 
-.meishi {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 100px;
-    background-color: lavender;
-    gap: 50px;
-    padding: 20px;
-    align-items: baseline;
-}
-
 table{
     table-layout: fixed;
     width: 100%;
-    border-collapse: collapse;
-    font-size: large;
+}
+
+tr {
+    font-size: 18px;
+}
+
+.currentProject{
+    width: 180px;
 }
